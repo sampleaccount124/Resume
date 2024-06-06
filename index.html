@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('images/4002676.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 2rem;
+        }
+        nav {
+            margin-top: 1rem;
+            text-align: left;
+            padding-left: 2rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #50c878;
+        }
+        .about, .skills, .contact {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: rgba(0, 51, 51, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease-in-out;
+            text-align: left;
+        }
+        .about h2, .skills h2, .contact h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        .contact img {
+            width: 30px;
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+        .skill-category {
+    width: 100%; /* Adjust width for smaller screens */
+    text-align: center;
+    margin-bottom: 2rem; /* Add margin between skill categories */
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+}
+
+.skills-categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-categories li {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .skill-category {
+        width: calc(33.333% - 1rem); /* Adjust width for larger screens */
+        margin-bottom: 0; /* Remove margin between skill categories */
+    }
+}
+
+
+
+.skill-category {
+    width: calc(33.333% - 1rem); /* Adjust width as needed */
+    text-align: center;
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+}
+
+.skills-categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-categories li {
+    margin-bottom: 0.5rem;
+}
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                font-size: 1rem;
+                margin: 0 1rem;
+            }
+            .about, .skills, .contact {
+                padding: 1rem;
+            }
+            .about h2, .skills h2, .contact h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section id="about" class="about">
+            <h2>About</h2>
+            <p style="font-size: 30px;">Hi! My Name is <b style="color:rgb(13, 241, 233);">Anas Tanveer</em></b>. My portfolio showcases my best work from school and other cool stuff I've done. You can see my projects, skills and what I'm into.</p>
+        <h2 >Projects:
+        </h2>
+        <p style="font-size: 30px;"><ul style="font-size: 30px;">
+            <li> Text Compressor</li> 
+           <li>Rock paper Scissors Game</li> 
+           <li>Snake Game</li> 
+        </ul></p>
+        </section>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3 style="font-size:33px;">Frontend</h3>
+                    <ul style="font-size:25px;">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 style="font-size: 33px;">Backend</h3>
+                    <ul style="font-size:25px;">
+                        <li>MS SQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 style="font-size: 33px;">Other Languages</h3>
+                    <ul style="font-size:25px;">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p style="font-size:30px;">You can reach me at:<pre>  </pre><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail icon"><p style="font-size: 30px;">22014198-092@uog.edu.pk</p></p>
+        </section>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.about, .skills, .contact');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    } else {
+                        entry.target.style.opacity = '0';
+                        entry.target.style.transform = 'translateY(20px)';
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
