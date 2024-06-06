@@ -3,7 +3,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('background.jpg') no-repeat center center fixed;
+            background: green no-repeat center center fixed;
             background-size: cover;
             color: #fff;
             transition: all 0.3s ease-in-out;
